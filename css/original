@@ -1,0 +1,66 @@
+
+html,
+body{
+	background-color: #f1890e;
+	margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+div#content-container{
+	background: url('../img/back_circle.gif') no-repeat;
+	background-size: 100%;
+	padding: 90px 100px 165px 100px;
+	margin-top: 2%;
+}
+
+#img-logo{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 150px;
+	height: auto;
+}
+
+p#phrase{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+	font-family: 'chunkfive';
+	font-size: 22px;
+	line-height: 22px;
+}
+
+div#principal{
+	margin-bottom: 30px;
+}
+div#info{
+	font-family: 'ebrima';
+	font-size: 25px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+#hey{margin-bottom: 5px;}
+#hey h1{
+	font-family: 'chunkfive';
+	font-size: 55px;
+	color: #f1890e;
+}
+
+.align-center{
+	text-align: center;
+}
+
+
+
+.phone{
+	font-family: 'chunkfive';
+	font-size: 25px;
+	color: #f1890e;
+}
+
+.phone.pull-right{
+	text-align: right;
+	padding-right: 30px;
+}
+

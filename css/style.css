@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'chunkfive';
+  src: url('../fonts/chunkfive.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/chunkfive.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/chunkfive.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/chunkfive.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/chunkfive.svg#svgFontName') format('svg') /* Legacy iOS */
+       url('../fonts/chunkfive.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ebrima';
+  src: url('../fonts/ebrima.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ebrima.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ebrima.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ebrima.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ebrima.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ebrimabd';
+  src: url('../fonts/ebrimabd.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ebrimabd.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ebrimabd.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ebrimabd.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ebrimabd.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+html,
+body{
+	background-color: #ffffff;
+	margin: 0;
+  padding: 15px 0;
+  height: 100%;
+}
+
+div#content-container{
+	background: none;
+	background-size: 100%;
+	padding: 0px 40px;
+	text-align: center;
+}
+
+#img-logo{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 170px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+p#phrase{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+	font-family: 'chunkfive';
+	font-size: 22px;
+	line-height: 22px;
+}
+
+div#principal{
+	margin-bottom: 10px;
+}
+div#info{
+	font-family: 'ebrima';
+	font-size: 2em;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+
+#hey{margin-bottom: 5px;}
+#hey h1{
+	font-family: 'chunkfive';
+	font-size: 55px;
+	color: #f1890e;
+}
+
+.align-center{
+	text-align: center;
+}
+
+
+
+.phone{
+	font-family: 'chunkfive';
+	font-size: 22px;
+	color: #f1890e;
+	text-align: center;
+}
+
+.email{
+	text-align: center;
+	font-family: 'chunkfive';
+	font-size: 20px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	body{background-color: #ffffff;}
+	div#principal{margin-bottom: 20px;}
+	div#content-container{margin-top: 4%;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	html,body{
+		background-color: #f1890e;
+		padding: 0;
+	}
+
+	div#content-container{
+		background: url('../img/back_circle.gif') no-repeat;
+		text-align: left;
+		background-size: 100%;
+		padding: 80px 60px 150px 60px;
+		margin-top: 3%;
+	}
+
+	div#principal{
+		margin-bottom: 30px;
+	}
+	div#info{line-height: 35px;}
+	div#hey{margin-bottom: 0px;}
+
+	.phone.left{margin-left: 45px}
+	.phone.right{float: right; margin-right: 65px}
+ }
+
+ /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.phone.left{margin-left: 30px}
+	.phone.right{margin-right: 40px}
+ }

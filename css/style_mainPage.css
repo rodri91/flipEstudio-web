@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'chunkfive';
+  src: url('../fonts/chunkfive.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/chunkfive.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/chunkfive.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/chunkfive.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/chunkfive.svg#svgFontName') format('svg') /* Legacy iOS */
+       url('../fonts/chunkfive.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ebrima';
+  src: url('../fonts/ebrima.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ebrima.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ebrima.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ebrima.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ebrima.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ebrimabd';
+  src: url('../fonts/ebrimabd.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ebrimabd.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ebrimabd.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ebrimabd.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ebrimabd.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+html,
+body{
+	background-color: #ffffff;
+	margin: 0;
+  padding: 15px 0;
+  height: 100%;
+}
+
+div#content-container{
+	background: none;
+	background-size: 100%;
+	padding: 0px 40px;
+	text-align: center;
+}
+
+h1{
+	font-family: 'chunkfive';
+	font-size: 23pt;
+	color: #ffffff;
+	text-shadow: 2px 2px 0 #000000;
+}
+
+.btn{
+	font-family: 'chunkfive';
+	font-size: 22px;
+	color:#ffffff;
+	background-color: #000000;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+}
+
+.btn:hover{
+	color: #f08821;
+	background-color: #ffffff;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+	background-image: none !important;
+}
+
+
+/**** NAVBAR ****/
+.navbar{
+	background-color: #ffffff;
+	height: 70px;
+	padding-top: 8px;
+	font-family: 'chunkfive';
+	border-bottom: 5px solid #939393;
+}
+
+.navbar .navbar-nav li a{
+	color: #f08821;
+	font-size: 18pt;
+	text-shadow: 1px 1px 0 #000000;
+}
+.navbar .navbar-nav li{
+	margin-right: 40px;
+}
+.navbar .navbar-nav li:last-child{
+	margin-right: 0px;
+}
+
+.navbar li.link{display: none;}
+
+.navbar li.logo{text-align: center; margin: 0;}
+#logo-header{
+	width: 90px;
+	margin-top: -10px;
+}
+
+/**** CAROUSEL ****/
+.carousel-indicators .active{
+		background-color: #f08821;
+		border: solid 1px #f08821;
+	}
+
+/**** SERVICIOS ****/
+div#block-servicios{
+	background-color:  #f08821;
+	padding: 50px 0 40px 0;
+}
+
+div#block-servicios ul{margin-top: 20px; -webkit-padding-start: 0px;}
+div#block-servicios ul li{
+	list-style: none;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+li.button-section img{
+	border-radius: 100%;
+	border: solid 7px #ffffff;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+li.button-section span{
+	display: block;
+	font-family: 'chunkfive';
+	font-size: 18pt;
+	color: #000000;
+	text-transform: lowercase;
+}
+
+li.button-section:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li.button-section:hover img{border: solid 7px #000000;}
+li.button-section:hover a{text-decoration: none;}
+
+div.info{
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 20px 25px 20px 25px;
+	font-family: 'ebrima';
+	font-size: 13pt;
+	margin-top: 30px; 
+	margin-bottom: 20px; 
+}
+
+/*** PROYECTOS ***/
+div#block-proyectos{
+	background: url("../img/bg_proyectos.jpg");
+	padding: 50px 0 40px 0;
+}
+
+div#block-proyectos h1{
+	color: #000000;
+	text-shadow: 2px 2px 0 #f08821;
+}
+
+#proyectos-slider{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+div#block-proyectos .btn{margin-top: 35px;}
+
+div.phrase{
+	font-family: 'chunkfive';
+	font-size: 30pt;
+	text-transform: uppercase;
+	color: #f08821;
+	text-shadow: 2px 2px #000000;
+	line-height: 31pt;
+}
+
+/*** NOSOTROS ***/
+div#block-nosotros{
+	padding: 50px 0 40px 0;
+}
+
+div#block-nosotros h1{
+	color: #f08821;
+	text-shadow: 2px 2px 0 #000000;
+}
+
+div#block-nosotros p{
+	font-family: 'chunkfive';
+	font-size: 14pt;
+	color: #000000;
+	line-height: 16pt;
+}
+
+/*** CONTACTO ***/
+div#block-contacto{
+	background-color: #f08821;
+	padding: 50px 0 20px 0;
+	background: #f08821;
+
+}
+
+div#block-contacto h1{
+	color: #000000;
+	text-shadow: 2px 2px #ffffff;
+}
+
+div#form-contacto input,
+div#form-contacto label,
+div#form-contacto textarea{
+	display: block;
+	width: 100%;
+	padding: 4px;
+}
+div#form-contacto label{
+	color: #ffffff;
+	font-family: 'chunkfive';
+	font-size: 16pt;
+	margin-bottom: 0px;
+	margin-top: 9px;
+	font-weight: normal; 
+}
+div#form-contacto input.btn{
+	font-size: 17px;
+	width: inherit;
+	padding: 3px 10px;
+	margin-top: 10px;
+}
+
+div#block-contacto #info{
+	text-align: right;
+	color: #ffffff;
+	font-family: 'chunkfive';
+	font-size: 21pt;
+	line-height: 28pt;
+}
+
+div#block-contacto h2{
+	font-family: 'chunkfive';
+	color: #000000;
+	font-size: 19pt;
+	margin-top: 50px;
+}
+
+div#block-contacto .social img{
+	display: inline-block;
+	width: 40px;
+}
+
+
+p#phrase{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+	font-family: 'chunkfive';
+	font-size: 22px;
+	line-height: 22px;
+}
+
+div#principal{
+	margin-bottom: 10px;
+}
+div#info{
+	font-family: 'ebrima';
+	font-size: 2em;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+
+#hey{margin-bottom: 5px;}
+#hey h1{
+	font-family: 'chunkfive';
+	font-size: 55px;
+	color: #f1890e;
+}
+
+.align-center{
+	text-align: center;
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	body{background-color: #ffffff;}
+	div#principal{margin-bottom: 20px;}
+	div#content-container{margin-top: 4%;}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	html,body{
+		background-color: #ffffff;
+		padding-top: 35px;
+	}
+
+	.navbar{text-align: center;}
+
+	.navbar .navbar-nav{
+		display: inline-block;
+		float: none;
+	}
+
+	nav.navbar li.link{display: inherit;}
+
+	#logo-header{
+	width: 140px;
+	height: auto;
+	}
+
+	div#block-contacto{
+		background: #f08821 url('../img/bg_contacto.png') no-repeat;
+		background-position: 100% 100%;
+	}
+ }
+
+ /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.phone.left{margin-left: 30px}
+	.phone.right{margin-right: 40px}
+ }
