@@ -31,7 +31,7 @@ html,
 body{
 	background-color: #ffffff;
 	margin: 0;
-  padding: 15px 0;
+  padding: 0;
   height: 100%;
 }
 
@@ -44,9 +44,13 @@ div#content-container{
 
 h1{
 	font-family: 'chunkfive';
-	font-size: 23pt;
+	font-size: 30pt;
 	color: #ffffff;
 	text-shadow: 2px 2px 0 #000000;
+}
+
+h1.subtitle{
+	font-size: 21pt;
 }
 
 .btn{
@@ -96,6 +100,8 @@ h1{
 #logo-header{
 	width: 90px;
 	margin-top: -10px;
+	-webkit-filter: drop-shadow(1px 5px 0px #939393);
+  filter:         drop-shadow(1px 5px 0px #939393); 
 }
 
 /**** CAROUSEL ****/
@@ -104,10 +110,11 @@ h1{
 		border: solid 1px #f08821;
 	}
 
+
 /**** SERVICIOS ****/
 div#block-servicios{
 	background-color:  #f08821;
-	padding: 50px 0 40px 0;
+	padding: 40px 0 40px 0;
 }
 
 div#block-servicios ul{margin-top: 20px; -webkit-padding-start: 0px;}
@@ -154,8 +161,12 @@ div.info{
 
 /*** PROYECTOS ***/
 div#block-proyectos{
-	background: url("../img/bg_proyectos.jpg");
-	padding: 50px 0 40px 0;
+	background: url("../img/bg_proyectos.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	padding: 20px 0 40px 0;
 }
 
 div#block-proyectos h1{
@@ -199,7 +210,7 @@ div#block-nosotros p{
 /*** CONTACTO ***/
 div#block-contacto{
 	background-color: #f08821;
-	padding: 50px 0 20px 0;
+	padding: 20px 0 20px 0;
 	background: #f08821;
 
 }
@@ -243,12 +254,30 @@ div#block-contacto h2{
 	font-family: 'chunkfive';
 	color: #000000;
 	font-size: 19pt;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
-div#block-contacto .social img{
-	display: inline-block;
+#fb-icon{
+	background: url('../img/facebook_icon_white.png') no-repeat;
 	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+
+#fb-icon:hover{
+	background: url('../img/facebook_icon.png') no-repeat;
+}
+
+#pinterest-icon{
+	background: url('../img/pinterest_icon_white.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#pinterest-icon:hover{
+	background: url('../img/pinterest_icon.png') no-repeat;
 }
 
 
@@ -300,6 +329,7 @@ div#info{
 		padding-top: 35px;
 	}
 
+
 	.navbar{text-align: center;}
 
 	.navbar .navbar-nav{
@@ -322,6 +352,11 @@ div#info{
 
  /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-	.phone.left{margin-left: 30px}
-	.phone.right{margin-right: 40px}
+
+	#block-servicios,
+	#block-contacto,
+	#block-proyectos,
+	#block-nosotros{
+		height: 100% !important;
+	}
  }

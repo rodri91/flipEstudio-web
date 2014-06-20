@@ -9,12 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style_mainPage.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 	<div class="container">
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   		<div class="container container-fluid">
   			<ul class="nav navbar-nav">
-    		<li class="link"><a href="">servicios</a></li>
+    		<li class="link"><a href="#block-servicios" data-offset="100">servicios</a></li>
     		<li class="link"><a href="">proyectos</a></li>
     		<li class="logo"><a href=""><img id="logo-header" src="img/logo_flip.png"></a></li>
     		<li class="link"><a href="">nosotros</a></li>
@@ -154,7 +154,7 @@ resultados esperados.</p>
       </div>
       <div class="row">
         <div class="col-lg-10">
-        <h1>Nuestro desafío</h1>
+        <h1 class="subtitle">Nuestro desafío</h1>
         <p>Ofrecer calidad, innovación, creatividad y resultados a los precios mas bajos posibles. ¿Por que a precios bajos? Porque somos una amplia red de especializados, conscientes del esfuerzo que hay detrás de cada marca y la necesidad de generar una comunicación de alto impacto y potenciar los resultados.</p>
         </div>
       </div>
@@ -187,8 +187,8 @@ resultados esperados.</p>
         <div id="info" class="col-lg-6 pull-right">
           <p>(0351) - 157072833<br>(03564) - 15651978<br>contacto@flipestudio.com.ar<br>Córdoba, Argentina.</p>
           <div class="social">
-            <a href=""><img src="img/pinterest_icon.png"></a>
-            <a href=""><img src="img/facebook_icon.png"></a>
+            <a href=""><div id="pinterest-icon"></div></a>
+            <a href=""><div id="fb-icon"></div></a>
           </div>
         </div>
       </div>
