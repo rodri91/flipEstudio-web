@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>FLIP! ESTUDIO</title>
 	<meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -15,10 +17,10 @@
   		<div class="container container-fluid">
   			<ul class="nav navbar-nav">
     		<li class="link"><a href="#block-servicios" data-offset="100">servicios</a></li>
-    		<li class="link"><a href="">proyectos</a></li>
+    		<li class="link"><a href="#block-proyectos">proyectos</a></li>
     		<li class="logo"><a href=""><img id="logo-header" src="img/logo_flip.png"></a></li>
-    		<li class="link"><a href="">nosotros</a></li>
-    		<li class="link"><a href="">contacto</a></li>
+    		<li class="link"><a href="#block-nosotros">nosotros</a></li>
+    		<li class="link"><a href="#block-contacto">contacto</a></li>
   		</div>
 		</nav>
 	</div> <!-- /* Container -->
@@ -32,14 +34,20 @@
 
   		<div class="carousel-inner">
     		<div class="item active">
-      		<img class="img-responsive" src="http://placehold.it/1300x500">
+      		<img class="img-responsive" src="img/sliders/slide1-compressed.jpg">
     		</div>
     		<div class="item">
-      		<img class="img-responsive" src="http://placehold.it/1300x500">
+      		<img class="img-responsive" src="img/sliders/slide2-compressed.jpg">
     		</div>
     		<div class="item">
-      		<img class="img-responsive" src="http://placehold.it/1300x500">
+      		<img class="img-responsive" src="img/sliders/slide3-compressed.jpg">
     		</div>
+        <div class="item">
+          <img class="img-responsive" src="img/sliders/slide4-compressed.jpg">
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="img/sliders/slide5-compressed.jpg">
+        </div>
   		</div>
 
   		<!-- Controls -->
@@ -100,19 +108,16 @@
     <div class="container">
 
       <div class="row">
-        <h1 class="col-lg-3">Proyectos</h1>
+        <h1 class="col-lg-3">Clientes</h1>
       </div>
 
       <div id="proyectos-slider" class="carousel slide col-lg-6 col-lg-offset-3" data-ride="carousel">
         <div class="carousel-inner">
         <div class="item active">
-          <img class="img-responsive" src="http://placehold.it/550x300">
+          <img class="img-responsive" src="img/sliders/proximamente.jpg">
         </div>
         <div class="item">
-          <img class="img-responsive" src="http://placehold.it/550x300">
-        </div>
-        <div class="item">
-          <img class="img-responsive" src="http://placehold.it/550x300">
+          <img class="img-responsive" src="img/sliders/proximamente.jpg">
         </div>
         </div>
 
@@ -146,16 +151,13 @@
       </div>
       <div class="row">
         <div class="col-lg-10">
-        <p>Inquietos, comprometidos, responsables, apasionados, honestos, alegres y curiosos.
-Tomamos cada proyecto como propio, buscando conocer todo el significado de cada
-marca y así poder entender las necesidades y generar las acciones para superar los
-resultados esperados.</p>
+        <p>Apasionados, comprometidos, responsables, inquietos, honestos, alegres y curiosos. Somos un grupo de profesionales de distintas áreas: marketing, diseño gráfico, diseño web, programación, social media y fotografía que trabajamos en conjunto para potenciar nuestros conocimientos y aplicarlos en cada proyecto.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-10">
         <h1 class="subtitle">Nuestro desafío</h1>
-        <p>Ofrecer calidad, innovación, creatividad y resultados a los precios mas bajos posibles. ¿Por que a precios bajos? Porque somos una amplia red de especializados, conscientes del esfuerzo que hay detrás de cada marca y la necesidad de generar una comunicación de alto impacto y potenciar los resultados.</p>
+        <p>Alcanzar tus objetivos, ofreciendo excelencia, innovación, creatividad, personalización, originalidad y resultados, cuidando la inversión de tu empresa.</p>
         </div>
       </div>
     </div>
@@ -215,4 +217,20 @@ resultados esperados.</p>
       element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
     }
 	</script>
+  <script type="text/javascript">
+    $('.navbar-nav>li>a[href*=#]:not([href=#])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+    || location.hostname == this.hostname) {
+
+  var target = $(this.hash);
+  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  if (target.length) {
+    $('html,body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+    return false;
+  }
+}
+}); 
+  </script>
 </html>

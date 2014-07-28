@@ -185,14 +185,14 @@ div.phrase{
 	font-family: 'chunkfive';
 	font-size: 30pt;
 	text-transform: uppercase;
-	color: #f08821;
+	color: #ffffff;
 	text-shadow: 2px 2px #000000;
 	line-height: 31pt;
 }
 
 /*** NOSOTROS ***/
 div#block-nosotros{
-	padding: 50px 0 40px 0;
+	padding: 30px 0 40px 0;
 }
 
 div#block-nosotros h1{
@@ -323,7 +323,8 @@ div#info{
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+
 	html,body{
 		background-color: #ffffff;
 		padding-top: 35px;
@@ -353,10 +354,10 @@ div#info{
  /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-	#block-servicios,
+	/*#block-servicios,
 	#block-contacto,
 	#block-proyectos,
 	#block-nosotros{
 		height: 100% !important;
-	}
+	}*/
  }
