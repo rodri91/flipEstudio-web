@@ -16,10 +16,10 @@
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   		<div class="container container-fluid">
   			<ul class="nav navbar-nav">
-    		<li class="link"><a href="#block-servicios" data-offset="100">servicios</a></li>
-    		<li class="link"><a href="#block-proyectos">proyectos</a></li>
+    		<li class="link"><a href="#anchor-servicios">servicios</a></li>
+    		<li class="link"><a href="#anchor-proyectos">clientes</a></li>
     		<li class="logo"><a href=""><img id="logo-header" src="img/logo_flip.png"></a></li>
-    		<li class="link"><a href="#block-nosotros">nosotros</a></li>
+    		<li class="link"><a href="#anchor-nosotros">nosotros</a></li>
     		<li class="link"><a href="#block-contacto">contacto</a></li>
   		</div>
 		</nav>
@@ -30,6 +30,9 @@
     		<li data-target="#main-slider" data-slide-to="0" class="active"></li>
     		<li data-target="#main-slider" data-slide-to="1"></li>
     		<li data-target="#main-slider" data-slide-to="2"></li>
+        <li data-target="#main-slider" data-slide-to="3"></li>
+        <li data-target="#main-slider" data-slide-to="4"></li>
+        <li data-target="#main-slider" data-slide-to="5"></li>
   		</ol>
 
   		<div class="carousel-inner">
@@ -48,6 +51,7 @@
         <div class="item">
           <img class="img-responsive" src="img/sliders/slide5-compressed.jpg">
         </div>
+
   		</div>
 
   		<!-- Controls -->
@@ -57,6 +61,7 @@
   		<a class="right carousel-control" href="#main-slider" data-slide="next">
     		<span class="glyphicon glyphicon-chevron-right"></span>
   		</a>
+    <div id="anchor-servicios"></div>
 		</div> <!-- /* Slider -->
 
     <div id="block-servicios">
@@ -65,21 +70,21 @@
         <h1 class="col-lg-3 ">Servicios</h1>
       </div>
       <div class="row">
-        <ul>
-          <li class="button-section col-lg-2 col-lg-offset-2">
-            <a href="">
+        <ul class="" role="tablist">
+          <li class="active button-section col-lg-2 col-lg-offset-2">
+            <a href="#visual" role="tab" data-toggle="tab">
               <img src="img/visual_icon.png">
               <span>Visual</span>
             </a>
           </li>
           <li class="button-section col-lg-2 col-lg-offset-1">
-            <a href="">
+            <a href="#comunicacion" role="tab" data-toggle="tab">
               <img src="img/comunicacion_icon.png">
               <span>Comunicación</span>
             </a>
           </li>
           <li class="button-section col-lg-2 col-lg-offset-1">
-            <a href="">
+            <a href="#ecommerce" role="tab" data-toggle="tab">
               <img src="img/ecommerce_icon.png">
               <span>Ecommerce</span>
             </a>
@@ -88,20 +93,37 @@
        </div>
         
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-        <div class="info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices auctor neque ultrices hendrerit. In quam lacus, consequat id bibendum vitae, fermentum eu justo. Praesent dapibus tristique justo, vitae tristique ligula iaculis nec. Donec varius nisl sed porta tincidunt. Suspendisse velit quam, dapibus eget lectus vitae, tincidunt facilisis felis. Morbi est odio, elementum ac tortor ut, mollis hendrerit dui. Nulla felis ligula, laoreet sit amet adipiscing eu, ullamcorper id nisl. </p>
-        </div>
+        <div class="col-lg-10 col-lg-offset-1 tab-content">
+          <div class="info tab-pane active" id="visual">
+            <p>Entendemos la importancia de la marca que representa tu negocio y por eso apostamos a identidades aútenicas, diferenciadas, representativas y memorables. 
+
+Creamos páginas web intuitivas, adaptables a distintos dispositivos, funcionales y con información clara y precisa para el público que querés captar. 
+
+El envio de newsletter es una de las principales acciones de comunicación y ecommerce  que genera mayor devolución en ventas y consultas. Para sacarle el máximo provecho es necesario diseñarlos acordes al público objetivo que va a llegar. En Flip! desarrollamos la estrategia comunicacional de la acción, la pieza gráfica, coordinamos el envio y evaluamos los resultados. 
+
+Como todo entra por los ojos, pensamos el packaging como una de las piezas fundamentales de tu producto. Generamos piezas funcionales y atractivos para que la experiencia de compra de tu producto sea la mejor. 
+
+Realizamos piezas gráficas pensadas para cada una de tus necesidades, ya sea una tarjeta personal, un tríptico, un banner o un folleto buscando la funcionalidad y la autenticidad para que se conviertan en memorables.  </p>
+          </div>
+          <div class="info tab-pane" id="comunicacion">
+            <p>¿Querés anunciar en una revista o en internet? contanos tu idea y juntos vamos definiendo lo mas adecuado para cumplir con los objetivos. 
+
+Gestionamos integramente las redes sociales y plataformas online. Definimos procesos y generamos una voz de tu marca, para que el tratamiento con tus clientes sea el mas adecuado a tus necesidades. </p>
+          </div>
+          <div class="info tab-pane" id="ecommerce">
+            <p>Las ventas ya no son solamente en una tienda, realizar una compra es una acción social: vemos un anuncio, lo charlamos con amigos, buscamos en internet, comparamos precios, evaluamos los comentarios, pedimos opiniones y podemos comprar por internet o en ir al local que más nos convenció. En mayor o menor medida, esta es la nueva forma de comprar en el mundo, y Argentina no se queda afuera. En Flip! nos encargamos de la gestión integral de tu versión online, evaluamos el producto, vemos en que medio es el mas conveniente y desarrollamos los procesos para darle inicio y continuidad.</p>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="align-center col-xs-12 col-lg-1 col-lg-offset-5">
-          <a class="btn" href="">contactanos</a>
+          <a class="btn" href="#block-contacto">contactanos</a>
         </div>
       </div>
       
     </div>
+    <div id="anchor-proyectos"></div>
     </div> <!-- /* Servicios -->
 
     <div id="block-proyectos">
@@ -136,10 +158,11 @@
           <p>¿qué esperas <br> para potenciar <br>tu negocio?</p>
         </div>
         <div class="align-center col-xs-12 col-lg-3 pull-right">
-          <a class="btn">contactanos</a>
+          <a class="btn" href="#block-contacto">contactanos</a>
         </div>
       </div>
     </div>
+    <div id="anchor-nosotros"></div>
     </div><!--  /* Proyectos -->
 
     <div id="block-nosotros">
@@ -189,8 +212,8 @@
         <div id="info" class="col-lg-6 pull-right">
           <p>(0351) - 157072833<br>(03564) - 15651978<br>contacto@flipestudio.com.ar<br>Córdoba, Argentina.</p>
           <div class="social">
-            <a href=""><div id="pinterest-icon"></div></a>
-            <a href=""><div id="fb-icon"></div></a>
+            <a href="http://es.pinterest.com/luchochiappero/flip-estudio/"><div id="pinterest-icon"></div></a>
+            <a href="https://www.facebook.com/EstudioFlip"><div id="fb-icon"></div></a>
           </div>
         </div>
       </div>

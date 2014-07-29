@@ -35,6 +35,17 @@ body{
   height: 100%;
 }
 
+div#anchor-proyectos,
+div#anchor-servicios,
+div#anchor-nosotros{
+	height: 30px;
+	width: 100%;
+}
+
+div#main-slider{position: relative;}
+div#anchor-servicios{position: absolute; bottom: 0;}
+
+
 div#content-container{
 	background: none;
 	background-size: 100%;
@@ -105,6 +116,15 @@ h1.subtitle{
 }
 
 /**** CAROUSEL ****/
+.glyphicon-chevron-left,
+.glyphicon-chevron-right{
+	color: black;
+}
+
+.carousel-indicators li{
+	background-color: #cecece;
+	border: none;
+}
 .carousel-indicators .active{
 		background-color: #f08821;
 		border: solid 1px #f08821;
